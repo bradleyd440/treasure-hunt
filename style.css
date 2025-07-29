@@ -1,0 +1,58 @@
+body {
+  font-family: 'Georgia', serif;
+  background-color: #1c1c1c;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 20px;
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/6/6c/Hogwartscrest.png');
+  background-repeat: no-repeat;
+  background-position: top right;
+  background-size: 150px;
+}
+
+h1 {
+  color: gold;
+}
+
+#clue-box {
+  background-color: #333;
+  padding: 10px;
+  margin: 10px auto;
+  width: fit-content;
+  border-radius: 8px;
+  font-size: 18px;
+  border: 2px solid #777;
+}
+
+#map {
+  display: grid;
+  grid-template-columns: repeat(5, 60px);
+  grid-gap: 10px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.tile {
+  width: 60px;
+  height: 60px;
+  background-color: #444;
+  border: 2px solid #777;
+  touch-action: manipulation;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.tile:hover {
+  background-color: #666;
+}
+
+.tile.clue {
+  background-color: #304d30;
+}
+
+.tile.found {
+  background-color: crimson;
+  background-image: url('https://upload.wikimedia.org/wikipedia/en/thumb/7/70/Deathly_Hallows_Sign.svg/1024px-Deathly_Hallows_Sign.svg.png');
+  background-size: cover;
+  background-position: center;
+}
